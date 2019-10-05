@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
   <div class="container">
-{{--    Branding Image--}}
+  <!--  Branding Image -->
     <a href="{{ url('/') }}" class="navbar-brand">
       LaraBBS
     </a>
@@ -8,11 +8,11 @@
       <span class="navbar-toggle-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="nabarSupportedContent">
-{{--        left side of navbar--}}
+      <!--  left side of navbar -->
       <ul class="navbar-nav mr-auto">
 
       </ul>
-{{--      right side of navbar--}}
+    <!-- right side of navbar -->
       <ul class="navbar-nav navbar-right">
         @guest
         <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">登录</a></li>
