@@ -22,7 +22,7 @@
            </div>
              <div class="form-group">
                <label for="introduction-field">个人简介</label>
-               <textarea type="text" name="introduction" id="introduction-field" value="{{ old('introduction' ,$user->introduction) }}" class="form-control"></textarea>
+               <textarea rows="3" name="introduction" id="introduction-field" value="{{ old('introduction', $user->introduction) }}" class="form-control">{{ old('introduction', $user->introduction) }}</textarea>
 
                <div class="form-group mb-4">
                  <label for="" class="avatar-label">用户头像</label>
