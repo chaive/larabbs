@@ -23,6 +23,11 @@
         <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">注册</a></li>
         @else
           <li class="nav-item"><a href="{{ route('topics.create') }}" class="nav-link mt-1 mr-3 font-weight-bold"><i class="fa fa-plus"></i></a></li>
+          <li class="nav-item notification-badge">
+            <a class="nav-link mr-3 badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white" href="{{ route('notifications.index') }}">
+              {{ Auth::user()->notification_count }}
+            </a>
+          </li>
         <li class="nav-item dropdown">
           <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
             <img src="{{ Auth::user()->avatar }}" alt="" class="img-responsive img-circle" width="30px" height="30px">
